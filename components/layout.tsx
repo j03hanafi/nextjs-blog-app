@@ -7,7 +7,7 @@ import Image from "next/image";
 const name = 'j03hanafi';
 export const siteTitle = 'Next.js Blog App';
 
-export default function Layout({children, home}) {
+export default function Layout({children, home}:{children: React.ReactNode, home?: boolean}) {
   return (
     <div className={styles.container}>
       <Head>
